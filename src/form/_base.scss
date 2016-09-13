@@ -1,0 +1,10 @@
+@import "../config/form";
+.form{
+  margin: 0;
+  .button,
+  select,
+  textarea,
+  input{
+    font-size: .875rem;
+  }
+}

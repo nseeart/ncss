@@ -1,0 +1,76 @@
+@import "../config/base";
+
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: $body-max-width;
+  min-width: $body-min-width;
+  margin: 0 auto;
+  background-color: $container-background-color;
+  overflow: hidden;
+}
+
+/*
+ * fixed
+ */
+[class*="fixed"] {
+  position: fixed;
+  width: 100%;
+  z-index: 108;
+  max-width: $body-max-width;
+  min-width: $body-min-width;
+}
+
+.fixed-top {
+  top: 0;
+}
+
+.fixed-bottom {
+  bottom: 0;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.auto {
+  overflow: hidden;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.li-left {
+  li {
+    float: left;
+  }
+}
+
+.li-right {
+  li {
+    float: right;
+  }
+}
+
+.padding-lr {
+  padding: 0 $body-border-width;
+}
+
+.margin-lr {
+  margin: 0 $body-border-width;
+}
+

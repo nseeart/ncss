@@ -1,0 +1,24 @@
+$width: 100%;
+.row-flex {
+  display: flex;
+  width: $width;
+  height: auto;
+  > .col,
+  > [class*="col-1"]{
+    flex: 1;
+  }
+
+  > .col-2-3,
+  > .col-2-5{
+    flex: 2;
+  }
+
+  > .col-3-4,
+  > .col-3-5{
+    flex: 3;
+  }
+
+  > .col-4-5 {
+    flex: 4;
+  }
+}

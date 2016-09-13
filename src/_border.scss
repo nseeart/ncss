@@ -1,0 +1,117 @@
+@import "config/border";
+$border-width: 1px;
+
+.border-around,
+.border-horizontal,
+.border-vertical,
+.border-top,
+.border-right,
+.border-bottom,
+.border-left{
+    background-repeat: no-repeat;
+}
+
+.border-around {
+    background-image: linear-gradient(180deg, $border-color 50%, transparent 50%),
+    linear-gradient(270deg, $border-color 50%, transparent 50%),
+    linear-gradient(0deg, $border-color 50%, transparent 50%),
+    linear-gradient(90deg, $border-color 50%, transparent 50%);
+    background-size: 100% $border-width,
+    $border-width 100%,
+    100% $border-width,
+    $border-width 100%;
+    background-position: top center,
+    center right,
+    bottom center,
+    center left;
+}
+
+/*
+ * 水平
+ */
+.border-horizontal {
+    background-image: linear-gradient(180deg, $border-color 50%, transparent 50%),
+                        linear-gradient(0deg, $border-color 50%, transparent 50%);
+    background-size: 100% $border-width,
+                    100% $border-width;
+    background-position: top center,
+                    bottom center;
+}
+
+/*
+ * 垂直
+ */
+.border-vertical {
+    background-image: linear-gradient(270deg, $border-color 50%, transparent 50%),
+                        linear-gradient(90deg, $border-color 50%, transparent 50%);
+    background-size: $border-width 100%,
+                     $border-width 100%;
+    background-position: center right,
+                        center left;
+}
+
+.border-top {
+    background-image: linear-gradient(180deg, $border-color 50%, transparent 50%);
+    background-size: 100% $border-width;
+    background-position: top center;
+}
+
+.border-right {
+    background-image: linear-gradient(270deg, $border-color 50%, transparent 50%);
+    background-size: $border-width 100%;
+    background-position: center right;
+}
+
+.border-bottom {
+    background-image: linear-gradient(0deg, $border-color 50%, transparent 50%);
+    background-size: 100% $border-width;
+    background-position: bottom center;
+}
+
+.border-left {
+    background-image: linear-gradient(90deg, $border-color 50%, transparent 50%);
+    background-size: $border-width 100%;
+    background-position: center left;
+}
+@media only screen and (-webkit-max-device-pixel-ratio: 1) {
+
+    .border-around {
+        background-image: linear-gradient(180deg, $border-color 50%, $border-color 50%),
+        linear-gradient(270deg, $border-width 50%, $border-width 50%),
+        linear-gradient(0deg, $border-width 50%, $border-width 50%),
+        linear-gradient(90deg, $border-width 50%, $border-width 50%);
+    }
+
+    /*
+     * 水平
+     */
+    .border-horizontal {
+        background-image: linear-gradient(180deg, $border-color 50%, $border-color 50%),
+        linear-gradient(0deg, $border-width 50%, $border-width 50%);
+    }
+
+    /*
+     * 垂直
+     */
+    .border-vertical {
+        background-image: linear-gradient(270deg, $border-color 50%, $border-color 50%),
+        linear-gradient(90deg, $border-color 50%, $border-color 50%);
+    }
+
+    .border-top {
+        background-image: linear-gradient(180deg, $border-color 50%, $border-color 50%);
+    }
+
+    .border-right {
+        background-image: linear-gradient(270deg, $border-color 50%, $border-color 50%);
+    }
+
+    .border-bottom {
+        background-image: linear-gradient(0deg, $border-color 50%, $border-color 50%);
+    }
+
+    .border-left {
+        background-image: linear-gradient(90deg, $border-color 50%, $border-color 50%);
+    }
+}
+

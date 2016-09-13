@@ -1,0 +1,55 @@
+header.title {
+  h1 {
+    font-size: 1.125rem;
+  }
+  .meta{
+    height: 1rem;
+  }
+  time {
+    font-size: .75rem;
+  }
+}
+
+.content{
+  ul,
+  dl,
+  ol{
+    margin-left: 2em;
+  }
+  ul > li,
+  dl > dd,
+  dl > dt{
+    line-height: 1.75em;
+    > ul,
+    > ol{
+      margin-left: 1em;
+    }
+    >i{
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      width: 4px;
+      height: 4px;
+      border:1px solid #aaa;
+      background-color: #aaa;
+      top: -1px;
+      margin-left: -.75em;
+      margin-right: .5em;
+      border-radius: 2px;
+    }
+    li{
+      >i{
+        background-color: transparent;
+      }
+    }
+  }
+  dt {
+    font-weight: 600;
+    padding-top: .25em;
+  }
+  dd {
+    padding-left: 1em;
+  }
+}
+
+

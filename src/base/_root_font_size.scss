@@ -1,0 +1,10 @@
+//常用屏幕宽
+$screen-list: 320, 360, 375, 384, 412, 414;
+
+@each $item in $screen-list{
+    @media only screen and (min-width: #{$item}px) {
+        html {
+            font-size: #{$item/20}px !important;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+$width: 100%;
+[class*="row-li-"]{
+  height: auto;
+  @include after-clear();
+  li{
+    float: left;
+  }
+}
+
+.row-li-space{
+  margin-left: -$li-space;
+  li{
+    padding-left: $li-space;
+  }
+}
+
+$n:2,3,4,5;
+@each $i in $n{
+  .row-li-#{$i}{
+    li{
+      width: $width/$i;
+    }
+  }
+}
+

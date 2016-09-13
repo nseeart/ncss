@@ -1,0 +1,37 @@
+@global:37.5rem;
+
+.header{
+    height: 100/@global;
+    background-color: #fff;
+    padding: 0 30/@global;
+    ul{
+        font-size: 32/@global;
+        float: right;
+        a{
+            padding: 32/@global 16/@global 30/@global 16/@global ;
+            color:#333;
+        }
+    }
+    li{
+        float: left;
+        &:last-child{
+            a{
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+.header +.slider{
+    margin-top: 100/@global;
+}
+
+.logo{
+    width: 212/@global;
+    height: 59/@global;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 212/@global 59/@global;
+    float: left;
+    margin-top: 18/@global;
+}

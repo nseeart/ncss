@@ -1,0 +1,145 @@
+$global:37.5;
+
+.titlebar{
+    background-color: #fff;
+}
+
+
+
+.top{
+    width: 100%;
+    height: 196/#{$global}rem;
+    padding-top: .625rem;
+    background-color: #f2f3f7;
+    text-align: center;
+    font-size: 28/#{$global}rem;
+    box-sizing: border-box;
+    p{
+        display: inline-block;
+        padding: 8/#{$global}rem 0 6/#{$global}rem 0;
+        &:last-child{
+            padding-left: 1rem;
+            color:#666;
+        }
+    }
+    .icon-safe{
+        background-repeat: no-repeat;
+        background-image: url(../images/icon_money_safe.png);
+        background-position: center left;
+        background-size: 24/#{$global}rem;
+    }
+}
+
+.item{
+    height: 300/#{$global}rem;
+    margin-bottom: 20/#{$global}rem;
+    box-sizing: border-box;
+    padding: .8rem;
+    background-color:#fff;
+    font-size: 28/#{$global}rem;
+}
+.item-title{
+    background-color:#cccccc;
+    padding: .125rem .25rem .1rem .25rem;
+    border-radius: 3px;
+    color:#fbfbfb;
+    margin-right: 24/#{$global}rem;
+}
+.item-text{
+    margin-right: 24/#{$global}rem;
+    color:#aaaaaa;
+}
+.item-tag{
+    padding: .125rem .25rem .1rem .25rem;
+    border-radius: 1rem;
+    color:#cccccc;
+    border:1px solid #cccccc;
+    box-sizing: border-box;
+}
+.item-top{
+    span{
+        display: inline-block;
+        vertical-align: middle;
+
+    }
+}
+
+.item-middle{
+    height: 150/#{$global}rem;
+    color:#aaa;
+    dd,
+    dt{
+        float: left;
+        height: 150/#{$global}rem;
+        line-height: 150/#{$global}rem;
+    }
+    dd{
+        span{
+            font-size: 50/#{$global}rem;
+            vertical-align: baseline;
+        }
+        sub{
+            font-size: .75rem;
+            vertical-align: baseline;
+        }
+        &:nth-child(1){
+            width: 50%;
+        }
+        &:nth-child(2){
+            width: 30%;
+        }
+    }
+    dt{
+        width: 20%;
+        text-align: right;
+    }
+}
+
+.circle-percent{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100/#{$global}rem;
+    height: 100/#{$global}rem;
+    line-height: 100/#{$global}rem;
+    position: relative;
+    text-align: center;
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        display: block;
+        width: 100/#{$global}rem;
+        height: 100/#{$global}rem;
+        border:3px solid #eee;
+        box-sizing: border-box;
+        border-radius: 100/#{$global}rem;
+    }
+    span{
+        display: inline-block;
+        vertical-align: middle;
+        color:#aaaaaa;
+    }
+}
+
+.item-bottom{
+    height: .87rem;
+    span{
+        color:#aaaaaa;
+    }
+}
+
+.btn-more{
+    margin: 0 .8rem;
+    a{
+        padding-top:34/#{$global}rem;;
+        padding-bottom: 31/#{$global}rem;
+        color:#32c1d4;
+        background-color: #fff;
+        text-align: center;
+        font-size: 28/#{$global}rem;
+        position: relative;
+        box-sizing: border-box;
+        border:1px solid #e6e6e6;
+    }
+}

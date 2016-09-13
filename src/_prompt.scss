@@ -1,0 +1,47 @@
+@import "config/prompt";
+.prompt{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 480px;
+    min-width: 320px;
+    z-index: $prompt-z-index;
+    transform: translateX(-50%);
+}
+.prompt-mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#000;
+    opacity: $prompt-mask-opacity;
+    z-index: 1;
+}
+
+.prompt-box{
+    position: absolute;
+    z-index: 2;
+    background-color:$prompt-box-bg;
+    border-radius: $prompt-border-radius;
+}
+.prompt-box-horizontal{
+     top:50%;
+     left: $prompt-lr-width;
+     right: $prompt-lr-width;
+     transform: translateY(-50%);
+ }
+.prompt-box-around{
+    top: $prompt-tb-width;
+    bottom:$prompt-tb-width;
+    left: $prompt-lr-width;
+    right: $prompt-lr-width;
+}
+.prompt-box-auto{
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+}

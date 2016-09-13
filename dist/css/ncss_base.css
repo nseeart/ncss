@@ -1,0 +1,212 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background-color: #eee; }
+
+body {
+  background-color: #eee;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", Arial, Helvetica, STHeiti, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: .875rem;
+  line-height: 1.2;
+  margin: 0; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+q {
+  background-color: #f9f9f9; }
+
+blockquote {
+  padding-left: 1rem;
+  padding-right: .25rem;
+  background-color: #f9f9f9;
+  position: relative;
+  border-left: 3px solid #aaa; }
+
+q {
+  padding: 0 .125em; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  padding: .4em 0; }
+
+h1 {
+  font-size: 1.5rem; }
+
+h2 {
+  font-size: 1.25rem; }
+
+h3 {
+  font-size: 1.125rem; }
+
+h4 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: .875rem; }
+
+h6 {
+  font-size: .75rem; }
+
+b,
+strong {
+  font-weight: 600; }
+
+small,
+sub,
+sup {
+  font-size: .75rem; }
+
+sub,
+sup {
+  position: relative;
+  vertical-align: middle;
+  opacity: .8; }
+
+sub {
+  bottom: -.25em; }
+
+sup {
+  top: -.25em; }
+
+p {
+  line-height: 1.625em;
+  padding: .4rem 0;
+  font-size: .875rem;
+  color: #333; }
+
+code {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 16px !important; } }
+
+@media only screen and (min-width: 360px) {
+  html {
+    font-size: 18px !important; } }
+
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 18.75px !important; } }
+
+@media only screen and (min-width: 384px) {
+  html {
+    font-size: 19.2px !important; } }
+
+@media only screen and (min-width: 412px) {
+  html {
+    font-size: 20.6px !important; } }
+
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 20.7px !important; } }
+
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 480px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: #fff;
+  overflow: hidden; }
+
+/*
+ * fixed
+ */
+[class*="fixed"] {
+  position: fixed;
+  width: 100%;
+  z-index: 108;
+  max-width: 480px;
+  min-width: 320px; }
+
+.fixed-top {
+  top: 0; }
+
+.fixed-bottom {
+  bottom: 0; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.auto {
+  overflow: hidden; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.li-left li {
+  float: left; }
+
+.li-right li {
+  float: right; }
+
+.padding-lr {
+  padding: 0 0.875rem; }
+
+.margin-lr {
+  margin: 0 0.875rem; }

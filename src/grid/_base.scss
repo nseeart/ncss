@@ -1,0 +1,36 @@
+$width: 100%;
+.row {
+  width: $width;
+  height: auto;
+  @include after-clear();
+  > [class*="col-"] {
+    float: left;
+  }
+  .col-2-1 {
+    width: $width/2;
+  }
+  .col-3-1 {
+    width: $width/3;
+  }
+  .col-3-2 {
+    width: $width - $width/3;
+  }
+  .col-4-1 {
+    width: $width/4;
+  }
+  .col-4-3 {
+    width: $width - $width/4;
+  }
+  .col-5-1 {
+    width: $width/5;
+  }
+  .col-5-2 {
+    width: $width*2/5;
+  }
+  .col-5-3 {
+    width: $width*3/5;
+  }
+  .col-5-4 {
+    width: $width*4/5;
+  }
+}

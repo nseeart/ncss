@@ -1,0 +1,150 @@
+$border-width: 1px;
+//top , right, bottom, left
+@mixin _border($direction,$border-color) {
+  background-repeat: no-repeat;
+  @if $direction == top {
+    background-image: linear-gradient(180deg, $border-color 50%, transparent 50%);
+    background-size: 100% $border-width;
+    background-position: $direction center;
+  } @else if $direction == right {
+    background-image: linear-gradient(270deg, $border-color 50%, transparent 50%);
+    background-size: $border-width 100%;
+    background-position: center $direction;
+  } @else if $direction == bottom {
+    background-image: linear-gradient(0deg, $border-color 50%, transparent 50%);
+    background-size: 100% $border-width;
+    background-position: $direction center;
+  } @else if $direction == left {
+    background-image: linear-gradient(90deg, $border-color 50%, transparent 50%);
+    background-size: $border-width 100%;
+    background-position: center $direction;
+  }
+
+}
+
+@mixin _mediaBorder($direction,$border-color) {
+  @if $direction == top {
+    background-image: linear-gradient(180deg, $border-color 50%, $border-color 50%);
+  } @else if $direction == right {
+    background-image: linear-gradient(270deg, $border-color 50%, $border-color 50%);
+  } @else if $direction == bottom {
+    background-image: linear-gradient(0deg, $border-color 50%, $border-color 50%);
+  } @else if $direction == left {
+    background-image: linear-gradient(90deg, $border-color 50%, $border-color 50%);
+  }
+}
+
+@mixin _borders($direction,$border-color) {
+  background-repeat: no-repeat, no-repeat;
+  @if $direction == horizontal {
+    //水平
+    background-image: linear-gradient(180deg, $border-color 50%, transparent 50%),
+    linear-gradient(0deg, $border-color 50%, transparent 50%);
+    background-size: 100% $border-width, 100% $border-width;
+    background-position: top center, bottom center;
+  } @else if $direction == vertical {
+    // 垂直
+    background-image: linear-gradient(270deg, $border-color 50%, transparent 50%),
+    linear-gradient(90deg, $border-color 50%, transparent 50%);
+    background-size: $border-width 100%, $border-width 100%;
+    background-position: center right, center left;
+  }
+}
+
+@mixin _mediaBorders($direction,$border-color) {
+  @if $direction == horizontal {
+    background-image: linear-gradient(180deg, $border-color 50%, $border-color 50%),
+    linear-gradient(0deg, $border-color 50%, $border-color 50%);
+  } @else if $direction == vertical {
+    background-image: linear-gradient(270deg, $border-color 50%, $border-color 50%),
+    linear-gradient(90deg, $border-color 50%, $border-color 50%);
+  }
+}
+
+@mixin _borderAround($border-color) {
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-image: linear-gradient(180deg, $border-color 50%, transparent 50%),
+  linear-gradient(270deg, $border-color 50%, transparent 50%),
+  linear-gradient(0deg, $border-color 50%, transparent 50%),
+  linear-gradient(90deg, $border-color 50%, transparent 50%);
+  background-size: 100% $border-width,
+  $border-width 100%,
+  100% $border-width,
+  $border-width 100%;
+  background-position: top center,
+  center right,
+  bottom center,
+  center left;
+}
+
+@mixin _mediaBorderAround($border-color) {
+  .border-around {
+    background-image: linear-gradient(180deg, $border-color 50%, $border-color 50%),
+    linear-gradient(270deg, $border-width 50%, $border-width 50%),
+    linear-gradient(0deg, $border-width 50%, $border-width 50%),
+    linear-gradient(90deg, $border-width 50%, $border-width 50%);
+  }
+}
+
+@mixin border($direction,$border-color:#aaa) {
+  @if $direction == 'top' {
+    .border-#{$direction} {
+      @include _border($direction, $border-color);
+    }
+  } @else if $direction == 'right' {
+    .border-#{$direction} {
+      @include _border($direction, $border-color);
+    }
+  } @else if $direction == 'bottom' {
+    .border-#{$direction} {
+      @include _border($direction, $border-color);
+    }
+  } @else if $direction == 'left' {
+    .border-#{$direction} {
+      @include _border($direction, $border-color);
+    }
+  } @else if $direction == 'horizontal' {
+    .border-#{$direction} {
+      @include _borders($direction, $border-color);
+    }
+  } @else if $direction == 'vertical' {
+    .border-#{$direction} {
+      @include _borders($direction, $border-color);
+    }
+  } @else {
+    .border-around {
+      @include _borderAround($border-color)
+    }
+  }
+  @media only screen and (-webkit-max-device-pixel-ratio: 1) {
+    @if $direction == 'top' {
+      .border-#{$direction} {
+        @include _mediaBorder($direction, $border-color);
+      }
+    } @else if $direction == 'right' {
+      .border-#{$direction} {
+        @include _mediaBorder($direction, $border-color);
+      }
+    } @else if $direction == 'bottom' {
+      .border-#{$direction} {
+        @include _mediaBorder($direction, $border-color);
+      }
+    } @else if $direction == 'left' {
+      .border-#{$direction} {
+        @include _mediaBorder($direction, $border-color);
+      }
+    } @else if $direction == 'horizontal' {
+      .border-#{$direction} {
+        @include _mediaBorders($direction, $border-color);
+      }
+    } @else if $direction == 'vertical' {
+      .border-#{$direction} {
+        @include _mediaBorders($direction, $border-color);
+      }
+    } @else {
+      .border-around {
+        @include _mediaBorderAround($border-color)
+      }
+    }
+  }
+}

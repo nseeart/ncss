@@ -1,0 +1,215 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <title>ncss</title>
+    <meta name="keywords" content="@ncss">
+    <meta name="description" content="@ncss">
+    <link type="text/css" rel="stylesheet" href="../dist/css/ncss_base.css"/>
+    <link type="text/css" rel="stylesheet" href="../dist/css/ncss.css"/>
+    <link type="text/css" rel="stylesheet" href="../dist/css/github-gist.css"/>
+    <link type="text/css" rel="stylesheet" href="../dist/css/doc.css"/>
+</head>
+<body>
+<!--[if lt IE 9]>
+<p style="text-align: center!important; margin: 0 0 0.5em!important; background-color: #d9534f!important; color: #fff!important; padding: 0.5em 1em!important;">
+    You are using an <strong>outdated</strong> browser. Please <a
+        style="color: #fff!important; text-decoration: underline!important;" href="http://browsehappy.com/?locale=en">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="container">
+    <header class="border-bottom header">
+        <h2>ncss 文档</h2>
+    </header>
+    <div class="padding-lr">
+        <article class="content">
+            <h2 id="ncss-">ncss教程</h2>
+<h3 id="nav">nav</h3>
+<ul>
+<li><a href="#content">content</a></li>
+<li><a href="#border">border</a></li>
+<li><a href="#grid">grid</a></li>
+<li><a href="#img">img</a></li>
+<li><a href="#loading">loading</a></li>
+<li><a href="#prompt">prompt</a></li>
+</ul>
+<h3 id="content">content</h3>
+<p>文章内容</p>
+<p>导入 _article.scss</p>
+<pre><code class="hljs scss">import "layout/_article.scss"</code></pre><p>html 标题</p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"title"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>我是文章标题<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"meta"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">time</span>&gt;</span>11/9/2016<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+        ...   //写作者...
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></code></pre><p>html 内容</p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>标题 h2<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>标题 h3<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>标题 h4<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>标题 h5<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>标题 h6<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>文字 b<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>文字 strong<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>文字 small<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>文字文字字<span class="hljs-tag">&lt;<span class="hljs-name">sub</span>&gt;</span>文字 sub<span class="hljs-tag">&lt;/<span class="hljs-name">sub</span>&gt;</span>文字文文字<span class="hljs-tag">&lt;<span class="hljs-name">sup</span>&gt;</span>文字文 sup<span class="hljs-tag">&lt;/<span class="hljs-name">sup</span>&gt;</span>字文字文<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>文字文<span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>字文字文<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>字文文字文字文字文字文字文字<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>字文字文字文字文字文字文字文字文字文字文字文字文字字文字文字文字文字文字文字文<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>文字文字文字文字:<span class="hljs-tag">&lt;<span class="hljs-name">q</span>&gt;</span>q字文字文字文文字文字文字文字q<span class="hljs-tag">&lt;/<span class="hljs-name">q</span>&gt;</span>字字文字文字<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>字文字文字文字 li<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>字文字文字文字 li
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>字文字文字文字 li<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>字文字文字文字 li<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span></code></pre><p>result</p>
+<div class="result loading-container">
+    <header class="title">
+        <h1>我是文章标题</h1>
+        <div class="meta">
+            <time>11/9/2016</time>
+        </div>
+    </header>
+    <article class="content">
+        <h2>标题 h2</h2>
+        <h3>标题 h3</h3>
+        <h4>标题 h4</h4>
+        <h5>标题 h5</h5>
+        <h6>标题 h6</h6>
+        <b>文字 b</b><br/>
+        <strong>文字 strong</strong><br/>
+        <small>文字 small</small>
+        <br/>
+        <p>文字文字字<sub>文字 sub</sub>文字文文字<sup>文字文 sup</sup>字文字文</p>
+        <p>文字文<code>字文字文</code>字文文字文字文字文字文字文字</p>
+        <blockquote>
+            <p>字文字文字文字文字文字文字文字文字文字文字文字文字字文字文字文字文字文字文字文</p>
+        </blockquote>
+        <p>文字文字文字文字:<q>q字文字文字文文字文字文字文字q</q>字字文字文字</p>
+        <ul>
+            <li><i></i>字文字文字文字 li</li>
+            <li><i></i>字文字文字文字 li
+                <ul>
+                    <li><i></i>字文字文字文字 li</li>
+                    <li><i></i>字文字文字文字 li</li>
+                </ul>
+            </li>
+        </ul>
+    </article>
+</div>
+
+<h3 id="border">border</h3>
+<p>高清屏1px的处理</p>
+<ul>
+<li>border-top:上</li>
+<li>border-right:右</li>
+<li>border-bottom:下</li>
+<li>border-left:左</li>
+<li>border-vertical:垂直</li>
+<li>border-horizontal:水平</li>
+<li>border-around:四周</li>
+</ul>
+<p>html</p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item border-top"</span>&gt;</span>top<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><p>result</p>
+<div class="result">
+    <div class="border-top border-item">top</div>
+    <div class="border-right border-item">right</div>
+    <div class="border-bottom border-item">bottom</div>
+    <div class="border-left border-item">left</div>
+    <div class="border-vertical border-item">vertical</div>
+    <div class="border-horizontal border-item">horizontal</div>
+    <div class="border-around border-item">around</div>
+</div>
+
+<h3 id="loading">loading</h3>
+<p>配置在 config/_loading.scss</p>
+<pre><code class="hljs scss"><span class="hljs-variable">$loading-width</span>:<span class="hljs-number">3rem</span>; <span class="hljs-comment">//外盒子大小</span>
+<span class="hljs-variable">$loading-radius</span>:.<span class="hljs-number">25rem</span>; <span class="hljs-comment">//外盒子圆角</span>
+<span class="hljs-variable">$loading-bgcolor</span>:rgba(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,.<span class="hljs-number">5</span>); <span class="hljs-comment">////外盒子背景</span>
+<span class="hljs-variable">$loading-color</span>:<span class="hljs-number">#fff</span>; <span class="hljs-comment">//loading颜色</span></code></pre><p>html</p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"loading loading-center"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><p>css 用于外盒子大小 <code> .loading-center </code> 是自己定义的</p>
+<pre><code class="hljs css"><span class="hljs-selector-class">.loading-center</span>{
+    <span class="hljs-attribute">position</span>: fixed;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translate</span>(-50%,-50%);
+}</code></pre><p>result</p>
+<div class="result loading-container">
+    <div class="loading loading-center">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+
+        </article>
+        <section class="page">
+            <h2 class="border-bottom"><a name="content"></a>content</h2>
+            <header class="title">
+                <h1>橷家棒棒 枯厅</h1>
+                <div class="sub-title">
+                    <time>11/9/2016</time>
+                </div>
+            </header>
+
+            <main>
+                <br/>
+                <br/>
+                <div class="item border-top">top</div>
+                <br/>
+                <br/>
+                <div class="item border-right">right</div>
+                <br/>
+                <br/>
+                <div class="item border-bottom">bottom</div>
+                <br/>
+                <br/>
+                <div class="item border-left">left</div>
+                <br/>
+                <br/>
+                <div class="item border-horizontal">horizontal</div>
+                <br/>
+                <br/>
+                <div class="item border-vertical">vertical</div>
+                <br/>
+                <br/>
+                <div class="item border-around">around</div>
+                <br/>
+                <br/>
+            </main>
+        </section>
+    </div>
+</div>
+</body>
+</html>
+
