@@ -10,9 +10,9 @@
 - [img](#img)
 - [loading](#loading)
 - [prompt](#prompt)
- - [auto](#auto)
- - [around](#around)
- - [horizontal](#horizontal)
+ - [prompt-auto](#prompt-auto)
+ - [prompt-around](#prompt-around)
+ - [prompt-horizontal](#prompt-horizontal)
 - [form](#form)
  - [radio](#form)
  - [checkbox](#checkbox)
@@ -520,7 +520,7 @@ result
 
 #### prompt
 
-##### auto
+##### prompt-auto
 上下左右都自适应
 
 html
@@ -542,7 +542,7 @@ resutl
     </div>
 </div>
 
-##### around
+##### prompt-around
 上下左右边距相等
 
 html
@@ -564,7 +564,7 @@ resutl
     </div>
 </div>
 
-##### horizontal
+##### prompt-horizontal
 上下自适应,左右边距相等
 
 html
@@ -789,6 +789,39 @@ result
 #### toggle
 html
 ```html
+<div class="row border-bottom toggle-row">
+    <div class="col right">
+        <label for="toggle-a" class="toggle right">
+            <input type="checkbox" checked name="toggle-a" id="toggle-a"/>
+            <div class="track">
+                <div class="handle"></div>
+            </div>
+        </label>
+    </div>
+    <div class="col auto title">下载图片 a</div>
+</div>
+<div class="row border-bottom toggle-row">
+    <div class="col right">
+        <label for="toggle-b" class="toggle toggle-b right">
+            <input type="checkbox" checked name="toggle-b" id="toggle-b"/>
+            <div class="track">
+                <div class="handle"></div>
+            </div>
+        </label>
+    </div>
+    <div class="col auto title">下载图片 b</div>
+</div>
+<div class="row border-bottom toggle-row">
+    <div class="col right">
+        <label for="toggle-c" class="toggle toggle-c right">
+            <input type="checkbox" name="toggle-c" id="toggle-c"/>
+            <div class="track">
+                <div class="handle"></div>
+            </div>
+        </label>
+    </div>
+    <div class="col auto title">下载图片 c</div>
+</div>
 ```
 result
 <div class="result">
