@@ -94,7 +94,7 @@ var fnSass = function () {
 		}, function(err, str){
 			if (err) throw err;
 			var siteIndexHTML = str;
-			var publicIndexPath = path.resolve(PUBLIC_DIR, 'index.html');
+			var publicIndexPath = path.resolve(DIST_DIR, 'index.html');
 			fs.writeFileSync(publicIndexPath, siteIndexHTML, 'utf-8');
 		});
 	}

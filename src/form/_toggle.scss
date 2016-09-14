@@ -1,15 +1,16 @@
-$handle-width:$toggle-height - ($toggle-margin*2);
 .toggle{
   display: block;
   width:$toggle-width;
   height: $toggle-height;
+  cursor: pointer;
   input{
     display: none;
   }
   input:checked + .track{
     background-color: $toggle-color;
     .handle{
-      left:$toggle-width - $handle-width - $toggle-margin;
+      left:$toggle-width - $toggle-height;
+      border:2px solid  $toggle-color;
     }
   }
   .track{
@@ -21,18 +22,24 @@ $handle-width:$toggle-height - ($toggle-margin*2);
     background-color: $toggle-bg;
     transition-timing-function: ease-in-out;
     transition-duration: 0.3s;
-    transition-property: background-color;
+    transition-property: background-color , border;
   }
   .handle{
     position: absolute;
-    top:$toggle-margin;
-    left:$toggle-margin;
+    top:0;
+    left:0;
     background-color: #fff;
-    border-radius: $handle-width/2;
-    height:$handle-width;
-    width:$handle-width;
+    border-radius:$toggle-height/2;
+    height:$toggle-height;
+    width:$toggle-height;
     transition-timing-function: ease-in-out;
     transition-duration: 0.3s;
     transition-property: left ;
+    border:2px solid $toggle-bg;
+  }
+}
+.toggle-row{
+  .title {
+    line-height: $toggle-height;
   }
 }

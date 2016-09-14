@@ -27,19 +27,19 @@
     background-color:$prompt-box-bg;
     border-radius: $prompt-border-radius;
 }
-.prompt-box-horizontal{
+.prompt-horizontal{
      top:50%;
      left: $prompt-lr-width;
      right: $prompt-lr-width;
      transform: translateY(-50%);
  }
-.prompt-box-around{
+.prompt-around{
     top: $prompt-tb-width;
     bottom:$prompt-tb-width;
     left: $prompt-lr-width;
     right: $prompt-lr-width;
 }
-.prompt-box-auto{
+.prompt-auto{
     display: inline-block;
     left: 50%;
     top: 50%;

@@ -8,9 +8,10 @@ $width: 100%;
 }
 
 .row-li-space{
-  margin-left: -$li-space;
+  margin:0 -#{$li-space/2};
   li{
-    padding-left: $li-space;
+    padding:0 #{$li-space/2};
+    border:none !important;
   }
 }
 

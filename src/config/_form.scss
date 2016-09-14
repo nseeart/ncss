@@ -1,6 +1,8 @@
+$global-Highlight-color:#0080ff !default;
+
 $radio-width: 1rem;
 $radio-color: #aaa;
-$radio-checked-color: blue;
+$radio-checked-color: $global-Highlight-color;
 $radio-radius: $radio-width/2;
 
 //checkbox
@@ -11,7 +13,7 @@ $checkbox-radius: 2px;
 
 //toggle
 $toggle-bg:#ccc;
-$toggle-color: #0080ff;
+$toggle-color: $global-Highlight-color;
 $toggle-width: 2.75rem;
 $toggle-height: 1.75rem;
 $toggle-margin:.125rem;
