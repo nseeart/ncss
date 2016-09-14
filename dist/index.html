@@ -15,10 +15,7 @@
 </head>
 <body>
 <!--[if lt IE 9]>
-<p style="text-align: center!important; margin: 0 0 0.5em!important; background-color: #d9534f!important; color: #fff!important; padding: 0.5em 1em!important;">
-    You are using an <strong>outdated</strong> browser. Please <a
-        style="color: #fff!important; text-decoration: underline!important;" href="http://browsehappy.com/?locale=en">upgrade
-    your browser</a> to improve your experience.</p>
+<p style="text-align: center!important; margin: 0 0 0.5em!important; background-color: #d9534f!important; color: #fff!important; padding: 0.5em 1em!important;">You are using an <strong>outdated</strong> browser. Please <a style="color: #fff!important; text-decoration: underline!important;" href="http://browsehappy.com/?locale=en">upgradeyour browser</a> to improve your experience.</p>
 <![endif]-->
 
 <div class="container">
@@ -27,7 +24,82 @@
     </header>
     <div class="padding-lr">
         <article class="content">
-            <h3 id="nav">nav</h3>
+            <h3 id="-ncss">关于ncss</h3>
+<blockquote>
+<p>ncss是一款在工作实战中留下的css方案集.它不是一个完整的框架,只是一些平常开发比较常用的css布局的中的reset,fontSize,layout提出来,方便大家直接用,不影响自己的项目ui.</p>
+<p>ncss很小,只是15k</p>
+</blockquote>
+<h5 id="-">项目目录介绍</h5>
+<ul>
+<li><span>demo</span> //开发的案例</li>
+<li><span>dist</span> //压缩文件</li>
+<li><span>doc</span> //文档</li>
+<li><span>src</span> //开发目录<ul>
+<li><span>base</span> //基础模块目录<ul>
+<li><span>_layout.scss</span> //常用布局模块</li>
+<li><span>_reset.scss</span> //重置浏览器模块</li>
+<li><span>_root_font_size.scss</span> //响应字体大小模块</li>
+</ul>
+</li>
+<li><span>config</span> //配置目录<ul>
+<li><span>_bar.scss</span></li>
+<li><span>_base.scss</span></li>
+<li><span>_border.scss</span></li>
+<li><span>_form.scss</span></li>
+<li><span>_grid.scss</span></li>
+<li><span>_img.scss</span></li>
+<li><span>_loading.scss</span></li>
+<li><span>_prompt.scss</span></li>
+</ul>
+</li>
+<li><span>demo</span><ul>
+<li><span>_mixin.scss</span> //mixin演示</li>
+</ul>
+</li>
+<li><span>form</span> //表单组件重写<ul>
+<li><span>_base.scss</span></li>
+<li><span>_checkbox.scss</span></li>
+<li><span>_radio.scss</span></li>
+<li><span>_toggle.scss</span></li>
+</ul>
+</li>
+<li><span>grid</span> //删格系统 &amp;&amp; 平分系统<ul>
+<li><span>_base.scss</span> //基础删格 div</li>
+<li><span>_flex.scss</span> //flex删格</li>
+<li><span>_li.scss</span> //列表删格</li>
+<li><span>_table.scss</span> //表格删格</li>
+</ul>
+</li>
+<li><span>img</span> //图片占位<ul>
+<li><span>_base.scss</span></li>
+</ul>
+</li>
+<li><span>layout</span> //布局相关<ul>
+<li><span>_article.scss</span></li>
+</ul>
+</li>
+<li><span>mixin</span> //混合模块<ul>
+<li><span>_base.scss</span></li>
+<li><span>_border.scss</span></li>
+</ul>
+</li>
+<li><span>_bar.scss</span> //bar模块入口</li>
+<li><span>_border.scss</span> //1px模块入口</li>
+<li><span>_form.scss</span> //表单模块入口</li>
+<li><span>_grid.scss</span> //删格系统模块入口</li>
+<li><span>_img.scss</span> //图片占位模块入口</li>
+<li><span>_loading.scss</span> //loading模块入口</li>
+<li><span>_mixin.scss</span> //混合模块入口</li>
+<li><span>_prompt.scss</span> //提示窗口模块入口</li>
+<li><span>doc.scss</span> //文档样式</li>
+<li><span>ncss.scss</span> //框架入口</li>
+<li><span>ncss_base.scss</span> //框架基础入口</li>
+</ul>
+</li>
+<li><span>gulpfile.js</span></li>
+<li><span>package.json</span></li>
+</ul>
+<h3 id="nav">nav</h3>
 <ul>
 <li><a href="#content">content</a></li>
 <li><a href="#border">border</a></li>
@@ -41,9 +113,9 @@
 <li><a href="#img">img</a></li>
 <li><a href="#loading">loading</a></li>
 <li><a href="#prompt">prompt</a><ul>
-<li><a href="#auto">auto</a></li>
-<li><a href="#around">around</a></li>
-<li><a href="#horizontal">horizontal</a></li>
+<li><a href="#prompt-auto">prompt-auto</a></li>
+<li><a href="#prompt-around">prompt-around</a></li>
+<li><a href="#prompt-horizontal">prompt-horizontal</a></li>
 </ul>
 </li>
 <li><a href="#form">form</a><ul>
@@ -500,7 +572,7 @@ html</p>
 </div>
 
 <h4 id="prompt">prompt</h4>
-<h5 id="auto">auto</h5>
+<h5 id="prompt-auto">prompt-auto</h5>
 <p>上下左右都自适应</p>
 <p>html</p>
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"prompt"</span>&gt;</span>
@@ -518,7 +590,7 @@ html</p>
     </div>
 </div>
 
-<h5 id="around">around</h5>
+<h5 id="prompt-around">prompt-around</h5>
 <p>上下左右边距相等</p>
 <p>html</p>
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"prompt"</span>&gt;</span>
@@ -536,7 +608,7 @@ html</p>
     </div>
 </div>
 
-<h5 id="horizontal">horizontal</h5>
+<h5 id="prompt-horizontal">prompt-horizontal</h5>
 <p>上下自适应,左右边距相等</p>
 <p>html</p>
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"prompt"</span>&gt;</span>
@@ -741,7 +813,39 @@ html</p>
 
 <h4 id="toggle">toggle</h4>
 <p>html</p>
-<pre><code class="hljs html"></code></pre><p>result</p>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row border-bottom toggle-row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col right"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"toggle-a"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"toggle right"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">checked</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"toggle-a"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"toggle-a"</span>/&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"track"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"handle"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col auto title"</span>&gt;</span>下载图片 a<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row border-bottom toggle-row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col right"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"toggle-b"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"toggle toggle-b right"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">checked</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"toggle-b"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"toggle-b"</span>/&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"track"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"handle"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col auto title"</span>&gt;</span>下载图片 b<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row border-bottom toggle-row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col right"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"toggle-c"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"toggle toggle-c right"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"toggle-c"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"toggle-c"</span>/&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"track"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"handle"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col auto title"</span>&gt;</span>下载图片 c<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><p>result</p>
 <div class="result">
     <div class="row border-bottom toggle-row">
         <div class="col right">

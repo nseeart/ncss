@@ -1,3 +1,59 @@
+### 关于ncss
+> ncss是一款在工作实战中留下的css方案集.它不是一个完整的框架,只是一些平常开发比较常用的css布局的中的reset,fontSize,layout提出来,方便大家直接用,不影响自己的项目ui.
+
+> ncss很小,只是15k
+
+##### 项目目录介绍
+- <span>demo</span> //开发的案例
+- <span>dist</span> //压缩文件
+- <span>doc</span> //文档
+- <span>src</span> //开发目录
+ - <span>base</span> //基础模块目录
+   - <span>_layout.scss</span> //常用布局模块
+   - <span>_reset.scss</span> //重置浏览器模块
+   - <span>_root_font_size.scss</span> //响应字体大小模块
+ - <span>config</span> //配置目录
+   - <span>_bar.scss</span>
+   - <span>_base.scss</span>
+   - <span>_border.scss</span>
+   - <span>_form.scss</span>
+   - <span>_grid.scss</span>
+   - <span>_img.scss</span>
+   - <span>_loading.scss</span>
+   - <span>_prompt.scss</span>
+ - <span>demo</span>
+   - <span>_mixin.scss</span> //mixin演示
+ - <span>form</span> //表单组件重写
+   - <span>_base.scss</span>
+   - <span>_checkbox.scss</span>
+   - <span>_radio.scss</span>
+   - <span>_toggle.scss</span>
+ - <span>grid</span> //删格系统 && 平分系统
+   - <span>_base.scss</span> //基础删格 div
+   - <span>_flex.scss</span> //flex删格
+   - <span>_li.scss</span> //列表删格
+   - <span>_table.scss</span> //表格删格
+ - <span>img</span> //图片占位
+   - <span>_base.scss</span>
+ - <span>layout</span> //布局相关
+   - <span>_article.scss</span>
+ - <span>mixin</span> //混合模块
+   - <span>_base.scss</span>
+   - <span>_border.scss</span>
+ - <span>_bar.scss</span> //bar模块入口
+ - <span>_border.scss</span> //1px模块入口
+ - <span>_form.scss</span> //表单模块入口
+ - <span>_grid.scss</span> //删格系统模块入口
+ - <span>_img.scss</span> //图片占位模块入口
+ - <span>_loading.scss</span> //loading模块入口
+ - <span>_mixin.scss</span> //混合模块入口
+ - <span>_prompt.scss</span> //提示窗口模块入口
+ - <span>doc.scss</span> //文档样式
+ - <span>ncss.scss</span> //框架入口
+ - <span>ncss_base.scss</span> //框架基础入口
+- <span>gulpfile.js</span>
+- <span>package.json</span>
+
 ### nav
 
 - [content](#content)

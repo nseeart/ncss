@@ -354,11 +354,11 @@
   .radio-item span {
     color: #aaa; }
   .radio-item input:checked + .radio-icon {
-    border: 1px solid blue; }
+    border: 1px solid #0080ff; }
     .radio-item input:checked + .radio-icon:after {
-      background-color: blue; }
+      background-color: #0080ff; }
   .radio-item input:checked + .radio-icon + .radio-text {
-    color: blue; }
+    color: #0080ff; }
 
 .radio-text {
   font-size: .875rem; }
@@ -439,7 +439,8 @@
 .toggle {
   display: block;
   width: 2.75rem;
-  height: 1.75rem; }
+  height: 1.75rem;
+  cursor: pointer; }
   .toggle input {
     display: none; }
   .toggle input:checked + .track {
@@ -481,6 +482,9 @@
     -o-transition-property: left;
     transition-property: left;
     border: 2px solid #ccc; }
+
+.toggle-row .title {
+  line-height: 1.75rem; }
 
 header.title h1 {
   font-size: 1.125rem; }
