@@ -162,8 +162,9 @@ pre {
     top: 2.5rem;
     left: 1rem; } }
 
-blockquote ul {
-  padding: .25rem 0 .25rem .5rem; }
-
-blockquote li {
-  line-height: 1.5em; }
+blockquote {
+  padding: .25rem 0; }
+  blockquote ul {
+    padding: .25rem 0 .25rem .5rem; }
+  blockquote li {
+    line-height: 1.5em; }
