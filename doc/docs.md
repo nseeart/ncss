@@ -3,6 +3,9 @@
 
 > ncss很小,只是15k
 
+#### 支持给star
+github : [https://github.com/nseeart/ncss](https://github.com/nseeart/ncss)
+
 ##### 项目目录介绍
 - <span>demo</span> //开发的案例
 - <span>dist</span> //压缩文件
