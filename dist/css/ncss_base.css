@@ -80,8 +80,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
-  padding: .7em 0 .3em 0; }
+  font-weight: 600; }
 
 h1 {
   font-size: 1.5rem; }
@@ -130,6 +129,12 @@ p {
 
 code {
   background-color: rgba(0, 0, 0, 0.1); }
+
+button,
+a,
+input,
+textarea {
+  outline: none; }
 
 @media only screen and (min-width: 320px) {
   html {

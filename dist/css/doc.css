@@ -163,7 +163,8 @@ pre {
     left: 1rem; } }
 
 blockquote {
-  padding: .25rem 0; }
+  padding-top: .25rem;
+  padding-bottom: .25rem; }
   blockquote ul {
     padding: .25rem 0 .25rem .5rem; }
   blockquote li {

@@ -92,7 +92,6 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  padding: .7em 0 .3em 0;
 }
 
 h1 {
@@ -154,4 +153,11 @@ p {
 
 code {
   background-color: rgba(0, 0, 0, .1);
+}
+
+button,
+a,
+input,
+textarea{
+  outline: none;
 }
