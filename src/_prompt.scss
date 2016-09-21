@@ -1,47 +1,12 @@
 @import "config/prompt";
-.prompt{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 100%;
-    max-width: 480px;
-    min-width: 320px;
-    z-index: $prompt-z-index;
-    transform: translateX(-50%);
-}
-.prompt-mask{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:#000;
-    opacity: $prompt-mask-opacity;
-    z-index: 1;
-}
+@import "mixin/prompt";
 
-.prompt-box{
-    position: absolute;
-    z-index: 2;
-    background-color:$prompt-box-bg;
-    border-radius: $prompt-border-radius;
-}
-.prompt-horizontal{
-     top:50%;
-     left: $prompt-lr-width;
-     right: $prompt-lr-width;
-     transform: translateY(-50%);
- }
-.prompt-around{
-    top: $prompt-tb-width;
-    bottom:$prompt-tb-width;
-    left: $prompt-lr-width;
-    right: $prompt-lr-width;
-}
-.prompt-auto{
-    display: inline-block;
-    left: 50%;
-    top: 50%;
-    transform: translate3d(-50%,-50%,0);
+
+// 1.prompt-auto       : 上下左右都自适应
+// 2.prompt-around     : 上下左右边距相等
+// 3.prompt-horizontal : 上下自适应,左右边距相等
+$types:auto,around,horizontal;
+
+@each $item in $types{
+    @include prompt($item);
 }
