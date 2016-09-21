@@ -132,12 +132,40 @@
   background-color: #fff;
   border-radius: 0.125rem; }
 
-.prompt-horizontal {
+.prompt-auto {
+  display: inline-block;
+  left: 50%;
   top: 50%;
-  left: 1rem;
-  right: 1rem;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0); }
+
+.prompt {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  max-width: 480px;
+  min-width: 320px;
+  z-index: 1003;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.prompt-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1; }
+
+.prompt-box {
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 0.125rem; }
 
 .prompt-around {
   top: 1rem;
@@ -145,12 +173,40 @@
   left: 1rem;
   right: 1rem; }
 
-.prompt-auto {
-  display: inline-block;
+.prompt {
+  position: fixed;
+  top: 0;
+  bottom: 0;
   left: 50%;
+  width: 100%;
+  max-width: 480px;
+  min-width: 320px;
+  z-index: 1003;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.prompt-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1; }
+
+.prompt-box {
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 0.125rem; }
+
+.prompt-horizontal {
   top: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0); }
+  left: 1rem;
+  right: 1rem;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
 
 .loading {
   display: block;

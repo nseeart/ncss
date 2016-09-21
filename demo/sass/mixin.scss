@@ -1,3 +1,10 @@
 @import "../../src/mixin";
 
+
+$dirs: left, top, bottom, right, horizontal, vertical, " ";
+
+@each $item in $dirs {
+  @include border($item, red)
+}
+
 @include prompt('auto');

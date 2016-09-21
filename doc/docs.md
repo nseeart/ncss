@@ -24,8 +24,6 @@ github : [https://github.com/nseeart/ncss](https://github.com/nseeart/ncss)
    - <span>_img.scss</span>
    - <span>_loading.scss</span>
    - <span>_prompt.scss</span>
- - <span>demo</span>
-   - <span>_mixin.scss</span> //mixin演示
  - <span>form</span> //表单组件重写
    - <span>_base.scss</span>
    - <span>_checkbox.scss</span>
@@ -43,6 +41,7 @@ github : [https://github.com/nseeart/ncss](https://github.com/nseeart/ncss)
  - <span>mixin</span> //混合模块
    - <span>_base.scss</span>
    - <span>_border.scss</span>
+   - <span>_prompt.scss</span>
  - <span>_bar.scss</span> //bar模块入口
  - <span>_border.scss</span> //1px模块入口
  - <span>_form.scss</span> //表单模块入口
